@@ -13,7 +13,7 @@
   </form>
 
 <ul>
-  <p *ngIf="todos.length==0"><small>Você ainda não tem tarefa programadas</small></p>
+  <p *ngIf="todos.length==0"><small>Você ainda não tem tarefas programadas</small></p>
   <li *ngFor="let todo of todos">
     {{ todo.id }}.{{ todo.title }}
     <button *ngIf="!todo.done" (click)="markAsDone(todo)" >Concluir</button> 
